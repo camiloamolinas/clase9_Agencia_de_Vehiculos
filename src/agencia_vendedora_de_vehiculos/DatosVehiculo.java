@@ -67,11 +67,11 @@ public class DatosVehiculo {
     
     
 
-    /*@Override
+    @Override
     public String toString() {
         return "DatosVehiculo{" + "numeroDeSerie=" + numeroDeSerie + ", marca=" + marca + ", a\u00f1o=" + año + ", precio=" + precio + '}';
     }
-    */
+    
     
     
     

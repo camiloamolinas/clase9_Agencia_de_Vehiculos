@@ -54,12 +54,12 @@ public class Camioneta extends DatosVehiculo{
         System.out.println("Numero de Rodades : " + this.getNumeroDeRodades());
     }
     
-    /*@Override
+    @Override
     public String toString() {
-        return "Camioneta{"  +  super.toString() + "capacidadDeCarga=" + capacidadDeCarga + ", numeroDeEjes=" + numeroDeEjes + ", numeroDeRodades=" + numeroDeRodades + '}';
+        return "Camioneta{"  + "capacidadDeCarga=" + capacidadDeCarga + ", numeroDeEjes=" + numeroDeEjes + ", numeroDeRodades=" + numeroDeRodades + "  " + super.toString() +'}';
     }
     
-    */
+    
     
     
 }

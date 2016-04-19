@@ -55,13 +55,13 @@ public class AutoYVagoneta extends DatosVehiculo  {
     
     
     
-    /*@Override
+    @Override
     public String toString() {
-        return "AutoYVagoneta{"  + "numeroDePasajeros=" + numeroDePasajeros + '}';
+        return "AutoYVagoneta{"  + "numeroDePasajeros=" + numeroDePasajeros + "  " + super.toString() + '}';
     }
     
     
-    */
+    
 
     
     
