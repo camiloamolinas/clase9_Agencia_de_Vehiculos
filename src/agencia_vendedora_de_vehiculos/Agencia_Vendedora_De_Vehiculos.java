@@ -15,19 +15,22 @@ public class Agencia_Vendedora_De_Vehiculos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("Agencia Vendedora de Vehiculos 3.9");
+        System.out.println("");
+        System.out.println("");
         
            Scanner scanner = new Scanner(System.in);
         int continuar;
-        
+        AdministradorVehiculo admi = new AdministradorVehiculo(); 
            do{
-        System.out.println("Menu: (nuevo 3.4) " );                                          //Inicio Menu Usuario.
+        System.out.println("Menu : " );                                          //Inicio Menu Usuario.
         System.out.println("Seleccione la acccion deseada : ");
         System.out.println("1. Ingresar Vehiculo.");
         System.out.println("2. Buscar Vehculo.");
         
         int accion;
         accion = scanner.nextInt();
-        AdministradorVehiculo admi = new AdministradorVehiculo();  
+         
 
                 //Fin Menu. ----------------------------------------------------------------------------------
       
@@ -71,15 +74,16 @@ public class Agencia_Vendedora_De_Vehiculos {
                 int numeroDeEjes = scanner.nextInt();
                 System.out.println("Ingrese el numero de Rodades : ");
                 int numeroDeRodades = scanner.nextInt();
+                System.out.println();
                 
                 Camioneta camioneta = new Camioneta(capacidadDeCarga,numeroDeEjes, numeroDeRodades,numeroDeSerie, marca, año, precio);
                 admi.agregar(numeroDeSerie, camioneta);
             }
                 
-                    System.out.println(" variables : " + unidades + "y " + i );
+                   
             }  //For.
          
-                System.out.println("sali 1");
+                
         }//Fin opcion 1. -------------------------------------------------------------------------------------
         
         
@@ -88,11 +92,15 @@ public class Agencia_Vendedora_De_Vehiculos {
             String serie = scanner.next();
             DatosVehiculo auto = null;
             auto = admi.buscar(serie);
+            
             auto.imprimir();
-            /*String seguro;
+            System.out.println("");
+            String seguro;
             seguro = auto.toString();
-             System.out.println(seguro);
-             */
+            System.out.println(seguro);
+            
+             System.out.println("");
+            
           
             
         }       //Fin opcion 2. -------------------------------------------------------------------------------
